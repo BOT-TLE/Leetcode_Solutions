@@ -24,8 +24,7 @@ public:
                 if(gotIt)
                     ans.emplace_back(digits[i]);
             }
-            int sum = accumulate(ans.begin(),ans.end(),0);
-            if(sum == 0)
+            if(ans[ans.size() - 1] == 0)
                 ans.emplace_back(1);
             reverse(ans.begin(),ans.end());
             return ans;
