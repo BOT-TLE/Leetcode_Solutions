@@ -9,25 +9,17 @@ class Solution {
             if((nums[end]&1) == 1)
             {
                 oddCount++;
-                oneTime = false;
-            }
-            if(oneTime)
-            {
-                ans += count;
-            }
-            if(oddCount == k)
-            {
                 count = 0;
-                while(oddCount == k)
-                {
-                    count++;
-                    if((nums[start]&1)==1)
-                        oddCount--;
-                    start++;
-                    oneTime = true;
-                }
-                ans += count;
             }
+            while(oddCount == k)
+            {
+                count++;
+                   if((nums[start]&1)==1)
+                    oddCount--;
+                start++;
+                   oneTime = true;
+            }
+            ans += count;
             end++;
         }
         return ans;
