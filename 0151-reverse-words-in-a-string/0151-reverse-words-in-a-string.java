@@ -1,29 +1,3 @@
-// class Solution {
-//     public String reverseWords(String s) {
-//         String ans = "";
-//         boolean gotWord = false;
-//         for(int i = 0 ; i < s.length() ; i++)
-//         {
-//             if(s.charAt(i) != ' ')
-//             {
-//                 gotWord = true;
-//                 ans += s.charAt(i);
-//             }
-//             else{
-//                 if(!gotWord)
-//                     continue;
-//                 else{
-//                     gotWord = false;
-//                     ans += ' ';
-//                 }
-//             }
-//         }
-//         ans.stripTrailing();
-//         ans.strip();
-        
-//         return ans;
-//     }
-// }
 class Solution{
     public String reverseWords(String s)
     {
